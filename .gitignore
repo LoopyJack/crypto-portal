@@ -1,2 +1,6 @@
-node_modules/
+node_modules/*
+!node_modules/bitfinex-api-node/
+!node_modules/poloniex-orderbook/
+
+
 dist/bundle.js
