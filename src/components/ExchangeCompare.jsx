@@ -17,9 +17,14 @@ class ExchangeCompare extends React.Component {
         data={this.props.data[exchange]}>
       </ExchangeCompareRow>
     );
+
+    let style = {
+      fontFamily: 'Open Sans, Sans Serif'
+    }
+
     return (
       <div>
-      <table className="table-hover">
+      <table className="exchangecompare" style={style}>
         <thead>
             <tr>
                 <th>{this.props.name}</th>
