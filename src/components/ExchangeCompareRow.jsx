@@ -7,8 +7,10 @@ class ExchangeCompareRow extends React.Component {
 
   render() {
     let style = {
-      paddingLeft:  10,
-      paddingRight: 10
+      paddingLeft:  5,
+      paddingRight: 5,
+      textAlign: 'right',
+      minWidth: 70
     };
 
     return(

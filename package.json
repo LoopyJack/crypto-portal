@@ -27,6 +27,7 @@
     "griddle-react": "^1.2.0",
     "poloniex-orderbook": "^3.0.0",
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "react-smoothie": "^0.2.1"
   }
 }

@@ -21,13 +21,12 @@ bitfinws.on('open', () => {
   });
 });
 
+var polomap = {}
 
-var polomap = {
-  USDT_BTC: 'BTCUSD',
-  USDT_ETH: 'ETHUSD',
-  BTC_ZEC:  'ZECBTC',
-  BTC_DASH: 'DSHBTC'
-}
+Object.keys(symbols).forEach( (s) => {
+  polomap[symbols[s].poloniex] = s;
+});
+
 
 class App extends React.Component {
   constructor(props) {

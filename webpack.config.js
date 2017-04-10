@@ -1,15 +1,15 @@
 var webpack = require('webpack');
   module.exports = {
     entry: [
-      // 'webpack-dev-server/client?http://localhost:8080',
-      // 'webpack/hot/only-dev-server',
+      'webpack-dev-server/client?http://localhost:8080',
+      'webpack/hot/only-dev-server',
       './src/index.jsx'
     ],
     module: {
       loaders: [{
         test: /.jsx?$/,
         exclude: /node_modules/,
-        // loaders: ['react-hot-loader', 'babel-loader']
+        loaders: ['react-hot-loader', 'babel-loader'],
         loaders: ['babel-loader']
 
       }, {
@@ -34,10 +34,10 @@ var webpack = require('webpack');
     },
     devtool: 'eval-source-map',
     devServer: {
-      // hot: true,
+      hot: true,
       contentBase: './dist'
     },
     plugins: [
-      // new webpack.HotModuleReplacementPlugin()
+      new webpack.HotModuleReplacementPlugin()
     ]
   };
